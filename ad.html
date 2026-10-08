@@ -1,0 +1,17 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>html,body{margin:0;background:transparent}body{display:flex;justify-content:center}</style></head>
+<body><script>
+(function(){
+  var p=new URLSearchParams(location.search),ALLOW=['highrevenueformat.com','profitableratecpmnetwork.com'];
+  function ok(u){try{var x=new URL(u);return x.protocol==='https:'&&ALLOW.some(function(d){return x.hostname===d||x.hostname.slice(-d.length-1)==='.'+d})}catch(e){return false}}
+  function add(src,a){var s=document.createElement('script');s.src=src;if(a){s.async=true;s.setAttribute('data-cfasync','false')}document.body.appendChild(s)}
+  if(p.get('t')==='native'){
+    var src=p.get('src'),c=p.get('c')||'';
+    if(ok(src)&&/^container-[\w-]+$/.test(c)){var d=document.createElement('div');d.id=c;document.body.appendChild(d);add(src,true)}
+  }else{
+    var k=p.get('k')||'',w=+p.get('w'),h=+p.get('h'),host=p.get('host')||'',u='https://'+host+'/'+k+'/invoke.js';
+    if(/^\w+$/.test(k)&&w&&h&&ok(u)){window.atOptions={key:k,format:'iframe',height:h,width:w,params:{}};add(u)}
+  }
+})();
+</script></body></html>
